@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Банковская система</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+  <meta name="date" content="2016-02-21" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" media="all" href="libs/ioslides-13.5.1/fonts/fonts.css">
+
+  <link rel="stylesheet" media="all" href="libs/ioslides-13.5.1/theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="libs/ioslides-13.5.1/theme/css/phone.css">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Банковская система',
+                        useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                favIcon: 'lecture-3_files/logo.png',
+              },
+
+      // Author information
+      presenters: [
+            {
+        name:  'Салихов Марсель (<a href="mailto:marcel.salikhov@gmail.com">marcel.salikhov@gmail.com</a>)' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.6s;
+      -moz-transition: opacity 0.6s ease-in 0.6s;
+      -o-transition: opacity 0.6s ease-in 0.6s;
+      transition: opacity 0.6s ease-in 0.6s;
+      opacity: 0;
+    }
+
+    slides > slide:not(.nobackground):before {
+      font-size: 12pt;
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      background: url(lecture-3_files/logo.png) no-repeat 0 50%;
+      -webkit-background-size: 30px 30px;
+      -moz-background-size: 30px 30px;
+      -o-background-size: 30px 30px;
+      background-size: 30px 30px;
+      padding-left: 40px;
+      height: 30px;
+      line-height: 1.9;
+    }
+  </style>
+
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+        <aside class="gdbar"><img src="lecture-3_files/logo.png"></aside>
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;">2016-02-21</p>
+          </hgroup>
+  </slide>
+
+<slide class=''><hgroup><h2>Цели лекции</h2></hgroup><article  id="-">
+
+<ul>
+<li>Понять суть банковского бизнеса</li>
+<li>Понять, каким образом банки привлекают финансирование и как его используют</li>
+<li>Изучить особенности обязательств банков и принципы управления активами</li>
+<li>Изучить источники рисков, с которыми сталкиваются банки</li>
+<li>Понять особенности банковской системы РФ</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Финансовое посредничество</h2></hgroup><article  id="-">
+
+<ul>
+<li>Финансовые институты выступают <strong>посредниками</strong> между сберегающими и кредитующимися агентами, поэтому их активами и обязательствами являются различные финансовые инструменты</li>
+<li>Финансовые институты объединяют фонды множества людей и фирм с тем, чтобы обеспечить их более эффективное использование</li>
+<li>Уровень финансового развития и уровень экономического развития связаны между собой &#8211; нет развитых экономик с неразвитым финансовым сектором.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Банки</h2></hgroup><article >
+
+<p>Банки занимают особую роль в финансовой системе по следующим причинам:</p>
+
+<ul>
+<li>Банки обеспечивают большую часть <strong>внешнего финансирования</strong> компаний, особенности, в развивающихся экономиках.</li>
+<li>Банки, в отличие от других финансовых учреждений, имеют отличительный источник финансирования &#8211; <strong>депозиты</strong> (depository institution). Обычно депозиты &#8211; до определенной суммы - страхуются государством.</li>
+<li>Банковский бизнес &#8211; одним из наиболее <strong>регулируемых</strong> видов финансовой деятельности. Почему?</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Экономические функции финансовых учреждений (банков)</h2></hgroup><article  id="----">
+
+<ul>
+<li><strong>Объединение</strong> ресурсов множества мелких сберегающих агентов</li>
+<li>обеспечение расчетных и <strong>платежных</strong> функций</li>
+<li>Обеспечение возможностей для <strong>диверсификации</strong> риска</li>
+<li>Сбор и обрабатка информации таким образом, которые снижают <strong>информационные издержки</strong></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Активы и пассивы &quot;типичного&quot; банка</h2></hgroup><article  id="----">
+
+<ul>
+<li>Обязательства банка &#8211; источники средств, активы банка &#8211; вложения средств</li>
+<li><strong>Активы = Обязательства + Капитал</strong>. Капитал банка представляет собой стоимость для его акционеров.<br/></li>
+<li>Банки получают и предоставляют средства на платной основе (процентная ставка).</li>
+<li>Прибыль банка образуется за счет разница между процентной ставкой по привлеченным ресурсам и вложенным - <strong>net interest margin (NIM)</strong>.</li>
+<li>Активы и пассивы банков имеют разную &quot;длину&quot;. То есть банки предоставляют ресурсы &quot;в среднем&quot; на более длинный срок, чем привлекают ресурсы.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Активы банков</h2></hgroup><article  id="-">
+
+<ul>
+<li>Денежные средства</li>
+<li>Счета в Банке России и корсчета в других банках</li>
+<li>Кредиты корпоративному сектору &#8211; на текущие нужды (к примеру, пополнение оборотного капитала) и инвестиционные цели (к примеру, строительство завода)</li>
+<li>Кредиты населению &#8211; потребительские или ипотечные</li>
+<li>Кредиты другим финансовым учреждениям</li>
+<li>Вложения в долговые бумаги (облигации)</li>
+<li>Вложения в долевые бумаги (акции)</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Активы банковской системы России</h2></hgroup><article  id="---">
+
+<p>в трлн рублей</p>
+
+<div align="center">
+<p><img src="fig/bank_assets_table.png" width="770" height="471" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Активы банков &#8211; денежные средства</h2></hgroup><article  id="------">
+
+<p>Ликвидные активы банков можно разделить на следующие группы:</p>
+
+<ul>
+<li>Касса</li>
+<li>Резервы (фактически &#8211; средства в центральном банке)</li>
+<li>Средства в расчетах</li>
+<li>Корсчета &#8211; средства, которые банки держат в других банках</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Ликвидные активы российской банковской системы</h2></hgroup><article  id="----">
+
+<div align="center">
+<p><img src="fig/liquid_assets_chart.png" width="721" height="413" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Активы банков &#8211; кредиты</h2></hgroup><article  id="-----">
+
+<ul>
+<li>Кредиты нефинансовому сектору &#8211; обычно залоговые</li>
+<li>Кредиты физическим лицам - залоговые (ипотека) и беззалоговые (потребительские кредиты)</li>
+<li>Межбанковские кредиты</li>
+<li>Прочие кредиты, включая репо</li>
+</ul>
+
+<p>Банки могут специализироваться по основным типам кредитов (универсальные, розничные, ипотечные и прочие). Просроченная задолженность &#8211; не погашенная в срок задолженность по основному долгу и/или плановым процентам.</p>
+
+</article></slide><slide class=''><hgroup><h2>Кредиты российской банковской системы по типам</h2></hgroup><article  id="-----">
+
+<div align="center">
+<p><img src="fig/bank_credit_chart.png" width="721" height="413" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Доля просроченной задолженности (NPL) по типам кредитов</h2></hgroup><article  id="---npl---">
+
+<div align="center">
+<p><img src="fig/bank_npl_chart.png" width="721" height="413" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Пассивы банков</h2></hgroup><article  id="-">
+
+<ul>
+<li>Депозиты нефинансовых компаний</li>
+<li>Депозиты населения</li>
+<li>Депозиты других финансовых учреждений (межбанковский рынок кредитования)</li>
+<li>Выпущенные облигации</li>
+<li>Векселя</li>
+<li>Резервые на возможные потери</li>
+<li>Капитал банка</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Основные источники фондирования банковской системы России</h2></hgroup><article  id="-----">
+
+<div align="center">
+<p><img src="fig/bank_liabilities_chart.png" width="721" height="413" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>&quot;Валютизация&quot; депозитов</h2></hgroup><article  id="-">
+
+<p>Доля депозитов в иностранной валюте по типу</p>
+
+<div align="center">
+<p><img src="fig/fx_deposits_share.png" width="721" height="413" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Процентные ставки банков и оценка чистой процентной маржи (NIM)</h2></hgroup><article  id="--------nim">
+
+<div align="center">
+<p><img src="fig/nim_chart.png" width="721" height="413" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Капитал банка</h2></hgroup><article  id="-">
+
+<ul>
+<li><strong>Капитал банка = Активы банка - Обязательства банка</strong></li>
+<li>Капитал банка - это средста акционеров, вложенные в банка, и одновременно &quot;подушка безопасности&quot; против снижения стоимости активов, которая может привести к неплатежеспособности банка (обязательства &gt; активы).</li>
+<li>Банки обязаны выполнять требования по <strong>достаточности капитала</strong> (норматив Н1). Минимальное значение с 1 января 2016 года &#8211; 8% (ранее 10%)</li>
+<li>Определяется как отношение как активов, взвешенных по уровню риска (risk weighted assets &#8211; RWA) к капиталу</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Норматив Н1.0 для топ-10 российских банков</h2></hgroup><article  id="-1.0---10--">
+
+<p>по состоянию на 01.02.2016</p>
+
+<div align="center">
+<p><img src="fig/capital_adequacy_chart.png" width="721" height="413" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Резервы на возможные потери по ссудам (РВПС)</h2></hgroup><article  id="------">
+
+<ul>
+<li>Важная часть капитала &#8211; <strong>резервы на возможные потери по ссудам</strong></li>
+<li>РВПС начисляются для того, чтобы покрыть потенциальные убытки от невозврата кредита и дефолта &#8211; связь с просроченной задолженностью!</li>
+<li>Формирование резервов позволяет обеспечивать более стабильные условия деятельности и избегать сильных колебаний величины прибыли</li>
+<li>Банк классифицирует ссуды и относит их в ту или иную категорию качества, исходя из оценки риска.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Ставка риска по категории качества кредита</h2></hgroup><article  id="-----">
+
+<p>Определяется по Положению Банка России №254-П</p>
+
+<table class = 'rmdtable'>
+<col width="44%" />
+<col width="22%" />
+<col width="102%" />
+<tr class="header">
+<th align="left">Категория качества</th>
+<th align="left">Наименование</th>
+<th align="left">Размер расчетного резерва в процентах от суммы основного долга по ссуде</th>
+</tr>
+<tr class="odd">
+<td align="left">I категория качества (высшая)</td>
+<td align="left">Стандартные</td>
+<td align="left">0%</td>
+</tr>
+<tr class="even">
+<td align="left">II категория качества</td>
+<td align="left">Нестандартные</td>
+<td align="left">от 1% до 20%</td>
+</tr>
+<tr class="odd">
+<td align="left">III категория качества</td>
+<td align="left">Сомнительные</td>
+<td align="left">от 21% до 50%</td>
+</tr>
+<tr class="even">
+<td align="left">IV категория качества</td>
+<td align="left">Проблемные</td>
+<td align="left">от 51% до 100%</td>
+</tr>
+<tr class="odd">
+<td align="left">V категория качества (низшая)</td>
+<td align="left">Безнадежные</td>
+<td align="left">100%</td>
+</tr>
+</table>
+
+</article></slide><slide class=''><hgroup><h2>Базовая деятельность банка</h2></hgroup><article  id="--">
+
+<ul>
+<li>Трансформация активов</li>
+<li>Управление обязательствами</li>
+<li>Maturity transformation &#8211; банки всегда занимают &quot;коротко&quot;&quot; и кредитуют &quot;длинно&quot;.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Общие принципы управления банком</h2></hgroup><article  id="---">
+
+<ol>
+<li>Управление ликвидностью</li>
+<li>Управление активами</li>
+<li>Управление размером капитала и его достаточностью</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Рентабельнасть активов и капитала банка</h2></hgroup><article  id="----">
+
+<p>\[ ROA = \frac{прибыль}{активы} \]</p>
+
+<p>\[ ROE = \frac{прибыль}{капитал} \]</p>
+
+<p>\[ Leverage = \frac{активы}{капитал} \]</p>
+
+<p>\[ ROE = ROA * Leverage \]</p>
+
+<p>Из последнего уравнения следует, что при фиксированной доходности активов (ROA) прибыль для акционеров максимальна при <strong>минимальном</strong> размере капитала!</p>
+
+</article></slide><slide class=''><hgroup><h2>Риски банков</h2></hgroup><article  id="-">
+
+<ul>
+<li><strong>Риск ликвидности</strong> - риск того, что клиенты потребуют немедленно вернуть им наличные средства</li>
+<li><strong>Кредитный риск</strong> - риск того, что клиенты не вернут выданные кредиты.</li>
+<li><strong>Процентный риск</strong> - риск того, что изменение процентных ставок окажет большее влияние на стоимость активов, чем на стоимость обязательств</li>
+<li><strong>Валютный риск</strong> - риск того, что изменение стоимости валюты окажет большее влияние на стоимость активов, чем на стоимость обязательств.<br/><strong>Торговый риск</strong> - риск того, что трейдеры банка, осуществляя операции на рынках ценных бумаг, понесут убытки.</li>
+<li>Прочие риски</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Управление риском ликвидности</h2></hgroup><article  id="--">
+
+<ul>
+<li>риски на стороне обязательств - риск внезапного возврата депозитов</li>
+<li>риск на стороне активов -</li>
+</ul>
+
+<p>Банки могут управлять риском ликвидности за счет:</p>
+
+<ul>
+<li>приведения в соответствие временной структуры активов и обязательств</li>
+<li>формирования избыточных резервов</li>
+<li>обеспечения доступа к инструментам рефинансовирования центрального банка</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Управление кредитным риском</h2></hgroup><article  id="--">
+
+<p>Проблема ассиметрии информации - потенциальные заемщики знают о своем финансовом положении больше, чем банк. Наиболее рискованные заемщики имеют наибольшие стимулы обратиться в банк за кредитом.</p>
+
+<p>Инструменты управления кредитным риском:</p>
+
+<ul>
+<li>Диверсификация кредитного портфеля по заемщикам, отраслям и проч.</li>
+<li>Анализ и оценка финансового положения заемщиков (скрининг)</li>
+<li>Мониторинг деятельности заемщиков (к примеру, обязательство по переводу всех расчетов в основной кредитующий банк)</li>
+<li>Специализация банка</li>
+<li>Залоги</li>
+<li>Ковенанты</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Управление процентным риском</h2></hgroup><article  id="--">
+
+<ul>
+<li>Процентные ставки в экономике меняются со временем</li>
+<li>Стоимость различных активов и различных обязательств может по разному меняться при изменении процентных ставок, некоторые могут не меняться.</li>
+<li>Если банк имеет больше обязательств, &quot;чувствительных&quot; к изменению ставки, повышение ставок уменьшит прибыль банка, снижение ставок - увеличит.</li>
+<li>Стратегия управления процентным риском зависит от понимания и прогноза по процентным ставкам.</li>
+</ul>
+
+<p>Инструменты управления:</p>
+
+<ul>
+<li>модификация баланса с тем, чтобы снизить разницу между средней дюрацией активов и обязательств</li>
+<li>производные финансовые инструменты по ставкам</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Риски банков и необходимость регулирования</h2></hgroup><article  id="----">
+
+<p>Банковская деятельность - один из наиболее регулируемых видов деятельности из-за различных рисков и значимости финансовой системы для экономики в целом. Ассиметрия информация (стороны обладают разным количеством информации) усиливает проблемы отрицательного отбора и moral hazard.<br/>Формы регулирования банковской деятельности:</p>
+
+<ul>
+<li>необходимость выполнения нормативов (наиболее важный - норматив достаточности капитала). Невыполнение нормативов является причиной для отзыва лицензии, то есть фактического закрытия банка.</li>
+<li>Государственная система страхования вкладов</li>
+<li>Защита прав потребителей - требования о раскрытии информации об условиях (к примеру, эффективной процентной ставки по кредиту)</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Плюсы и минусы избыточного регулирования</h2></hgroup><article  id="----">
+
+<p>Аргумент Коуза:</p>
+
+<table class = 'rmdtable'>
+<tr class="header">
+<th align="left">Плюсы</th>
+<th align="left">Минусы</th>
+</tr>
+<tr class="odd">
+<td align="left">Стабильность системы</td>
+<td align="left">Издержки для банков</td>
+</tr>
+<tr class="even">
+<td align="left">Издержки мониторинга</td>
+<td align="left">Снижение эффективности</td>
+</tr>
+</table>
+
+</article></slide><slide class=''><hgroup><h2>&quot;Набег на банки&quot;&quot;</h2></hgroup><article  id="--">
+
+<ul>
+<li>Набег на банки - класссический пример о необходимости регулирования и наличия центрального банка.</li>
+<li>Избежание набегов на банки - одна из причин создания центральных банков для выполнения ими функции &quot;кредитора последней инстанции&quot;</li>
+<li>Набеги на банки происходят до сих пор!</li>
+<li>Пример со Сбербанком в декабре 2014 года (массовая смс-рассылка клиентам банка о финансовых проблемах)</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Банковская система России - основные особенности</h2></hgroup><article  id="------">
+
+<ul>
+<li>Доминирование нескольких крупных государственных банков &#8211; фактически сегментация банковского сектора на отдельные группы</li>
+<li>Опора на депозиты в структуре банковского фондирования, низкая доля иных источников финансирования</li>
+<li>Значительная доля операций в иностранной валюте как в активной, так и в пассивной части баланса &#8211; валютные риски</li>
+<li>Стратегия Банка России на сокращение количества банков и повышение их устойчивости</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Задания и вопросы - 1</h2></hgroup><article  id="-----1">
+
+<ol>
+<li>Банки имеют высокую долю ликвидных активов на балансе &#8211; по сравнению с другими бизнеса. Как вы думаете почему?</li>
+<li>Почему может изменяться доля ликвидных активов?</li>
+<li>Какие инструменты управления пассивами может использовать банк, столкнувшийся с неожиданным оттоком депозитов. Почему банки предпочитают управлять пассивами, а не активами в этом случае?</li>
+<li>Банки А и Б имеют активы на 10 млрд рублей. Доходность активов одинаковая в обоих банков. Банк А имеет обязательства в 8 млрд рублей, банк Б &#8211; на 9 млрд рублей. Акционером какого банка вы предпочли бы быть? Почему?</li>
+</ol></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script src="libs/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+<script src="libs/ioslides-13.5.1/js/prettify/prettify.js"></script>
+<script src="libs/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+<script src="libs/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+<script src="libs/ioslides-13.5.1/js/hammer.js"></script>
+<script src="libs/ioslides-13.5.1/js/slide-controller.js"></script>
+<script src="libs/ioslides-13.5.1/js/slide-deck.js"></script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
