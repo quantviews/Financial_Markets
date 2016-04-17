@@ -1,0 +1,89 @@
+---
+title: "Интерактивные графики"
+output: revealjs::revealjs_presentation
+---
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Денежная база и денежная масса 
+
+```{r, echo=FALSE, warning=FALSE,error=FALSE,message=FALSE, fig.width=10, fig.height=2.5}
+library(dygraphs)
+library(sophisthse)
+library(xts)
+money <- sophisthse("M_M", output = "zoo")
+
+dygraph(xts(money[,1:2])["2000::"]/1000, group = "money") %>%
+  dySeries("M0_M", label = 'Агрегат М0') %>%
+  dySeries("M2_M", label = 'Агрегат М2') %>%
+   dyAxis("y", label = "трлн рублей") %>%
+  dyRangeSelector()
+
+money.growth <- xts(money[,1:2])/lag(xts(money[,1:2]),12)*100-100
+dygraph(money.growth["2000::"], group = "money") %>%
+  dySeries("M0_M", label = 'Агрегат М0') %>%
+  dySeries("M2_M", label = 'Агрегат М2') %>%
+   dyAxis("y", label = "% к соответв. периоду прошлого года") %>%
+  dyRangeSelector()
+
+```
+
+## Инфляция в России
+
+```{r, echo=FALSE, warning=FALSE,error=FALSE,message=FALSE,fig.width=10, fig.height=2.5}
+library(dygraphs)
+library(sophisthse)
+library(xts)
+
+inflation <- sophisthse("CPI_M_CHI", output = 'zoo')
+inflation.yoy <- rollapply(xts(inflation)["1999::"],12,prod)/10^24*100
+
+dygraph(xts(inflation)["2000::"], group = "cpi") %>%
+  dySeries("CPI_M_CHI", label = 'Потребительская инфляция') %>%
+  dyAxis("y", label = "% к пред. месяцу") %>%
+  dyRangeSelector()
+
+dygraph(xts(inflation.yoy)["2000::"], group = "cpi") %>%
+  dySeries("CPI_M_CHI", label = 'Потребительская инфляция') %>%
+  dyAxis("y", label = "% к соотв. периоду прошлого года") %>%
+  dyRangeSelector()
+
+```
+
+
+## Инфляция и денежная масса
+
+```{r, echo=FALSE, warning=FALSE,error=FALSE,message=FALSE,fig.width=10, fig.height=5}
+buff <- merge(inflation.yoy-100, money.growth)['2000::']
+XtstoDf <- function(ts, ...){
+  df <- as.data.frame(ts)
+  df$date <- time(ts)
+  return(df)
+}
+
+buff <- XtstoDf(buff)
+buff$year <- format(buff$date, '%Y')
+library(metricsgraphics)
+
+mjs_plot(buff, x=M2_M, y=CPI_M_CHI) %>%
+  mjs_point(color_accessor=year ) %>%
+  mjs_labs(x="Денежная масса, %г/г", y="Инфляция, %г/г") %>%
+  mjs_add_legend(legend="year")
+
+```
+
+```{r, echo=FALSE, warning=FALSE,error=FALSE,message=FALSE,fig.width=10, fig.height=5}
+library('DiagrammeR')
+mermaid("graph TB
+    A --> C(markets)
+    B --> C
+    A --> D(intermidiaries)
+    B --> D
+    C -.-> D
+    A[Lenders] -- direct --> B[Borrowers]
+  ")
+```
