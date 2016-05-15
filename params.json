@@ -1,1 +1,7 @@
-{"name":"Financial markets","tagline":"","body":"### Курс \"Финансовые рынки и институты\" для бакалавров 2 курса Факультета мировой экономики и политики \r\n\r\nАвтор - Салихов Марсель (marcel.salikhov@gmail.com)\r\n\r\n1. [Финансовые рынки и институты](lectures/lecture-1.html)\r\n2. [Деньги, денежно-кредитная политика и центральный банк](lectures/lecture-2.html)\r\n3. [Банковская система](lectures/lecture-3.html)\r\n","google":"UA-73070228-1","note":"Don't delete this file! It's used internally to help with page regeneration."}
+{
+  "name": "Financial markets",
+  "tagline": "",
+  "body": "### Курс \"Финансовые рынки и институты\" для бакалавров 2 курса Факультета мировой экономики и политики \r\n\r\nАвтор - Салихов Марсель (marcel.salikhov@gmail.com)\r\n\r\n1. [Финансовые рынки и институты](lectures/lecture-1.html)\r\n2. [Деньги, денежно-кредитная политика и центральный банк](lectures/lecture-2.html)\r\n3. [Банковская система](lectures/lecture-3.html)\r\n4. [Валютный рынок](lectures/lecture-4.html)\r\n4. [Рынок ценных бумаг. Облигации](lectures/lecture-5.html)\r\n",
+  "google": "UA-73070228-1",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
