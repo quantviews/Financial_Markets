@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Пенсионная система</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+  <meta name="date" content="2016-05-30" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" media="all" href="libs/ioslides-13.5.1/fonts/fonts.css">
+
+  <link rel="stylesheet" media="all" href="libs/ioslides-13.5.1/theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="libs/ioslides-13.5.1/theme/css/phone.css">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Пенсионная система',
+                        useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                        favIcon: 'lecture-8_files/logo.png',
+              },
+
+      // Author information
+      presenters: [
+            {
+        name:  'Салихов Марсель (<a href="mailto:marcel.salikhov@gmail.com">marcel.salikhov@gmail.com</a>)' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.6s;
+      -moz-transition: opacity 0.6s ease-in 0.6s;
+      -o-transition: opacity 0.6s ease-in 0.6s;
+      transition: opacity 0.6s ease-in 0.6s;
+      opacity: 0;
+    }
+
+    slides > slide:not(.nobackground):before {
+      font-size: 12pt;
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      background: url(lecture-8_files/logo.png) no-repeat 0 50%;
+      -webkit-background-size: 30px 30px;
+      -moz-background-size: 30px 30px;
+      -o-background-size: 30px 30px;
+      background-size: 30px 30px;
+      padding-left: 40px;
+      height: 30px;
+      line-height: 1.9;
+    }
+  </style>
+
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+        <aside class="gdbar"><img src="lecture-8_files/logo.png"></aside>
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;">2016-05-30</p>
+          </hgroup>
+  </slide>
+
+<slide class=''><hgroup><h2>Цели лекции</h2></hgroup><article  id="-">
+
+<ul>
+<li>понять общие принципы устройства и задачи пенсионных систем</li>
+<li>понять, каким образом пенсионная система связана с экономикой и финансовыми рынками</li>
+<li>изучить устройство текущей пенсионной системы РФ</li>
+<li>понять дискуссию относительно будущего устройства пенсионной системы</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Пенсионная система - введение</h2></hgroup><article  id="----">
+
+<ul>
+<li>Пенсия &#8211; это <strong>отложенные сбережения</strong> на тот период, когда человек становится нетрудоспособным по тем или иным причинам (возраст, нетрудоспособность или просто нежелание работать).</li>
+<li>Пенсия &#8211; это не только государственные пенсия. Возможны другие варианты &#8211; сбережения, получение рентного дохода (сдача квартиры), поддержка со стороны детей.</li>
+<li>Задача пенсионной системы &#8211; обеспечить <strong>перенос финансовых ресурсов во времени</strong> на длительный промежуток времени (до 30-40 лет).</li>
+<li>Первые общегосударственные появились в конце 19 века в Германии &#8211; при канцлере Бисмарке.</li>
+<li>Сейчас практически во всех странах есть государственная пенсионная система. Но характер и масштаб пенсионных систем отличаются по разным странам.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Пенсионная системы - основные типы</h2></hgroup><article  id="-----">
+
+<ol>
+<li>Схема с установленным размером выплат (<strong>defined benefit</strong>). Пенсия выплачивается по достижению определенного возраста работнику, в зависимости от заработной платы и трудового стажа. Выплата осуществляется в виде пожизненного аннуитета - с компенсацией - согласно законодательству. Условный аналог в российской терминологии &#8211; <strong>распределительная</strong> система.</li>
+<li>Схема с установленным размером взносов (<strong>defined contribution</strong>). Размеры выплат зависит от суммы отчислений и накопленного дохода от инвестирования отчислений. Государство не устанавливает правил по индексации или минимальным суммам. Обычно используется как вспомогательная система. Условный аналог в российской терминологии &#8211; <strong>накопительная</strong> система.</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Изменение доходов с возрастом</h2></hgroup><article  id="---">
+
+<div align="center">
+<p><img src="fig/UK_Income_by_Age_and_Gender.png" width="850" height="500" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Типология пенсионных систем (ОЭСР)</h2></hgroup><article  id="---">
+
+<div align="center">
+<p><img src="fig/pension_systems.bmp" width="1000" height="620" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Российская пенсионная система</h2></hgroup><article  id="--">
+
+<ul>
+<li>До 2002 года в России существовала <strong>распределительная система</strong> пенсионного обеспечения, с 2002 года - <strong>&quot;гибридная&quot;</strong> система, которая сочетает элементы распределительной, и накопительной системы. Но приоритет остается &#8211; за распределительной системой.</li>
+<li>Работники (формально &#8211; за них это делают работодатели) осуществляют обязательные <strong>страховые выплаты</strong> в пенсионную систему (взносы ПФР - Пенсионный фонд РФ) и иные внебюджетные фонды.</li>
+<li>Пенсионеры получают <strong>государственную пенсию</strong>. Отдельные категории работников имеют право на <strong>досрочную пенсию</strong> (военные, тяжелые производства, работа на Крайнем Севере) и/или дополнительная пенсию по законодательству (военные, госслужащие, летчики-испытатели и проч.).<br/></li>
+<li>Есть <strong>негосударственная пенсия</strong> - если осуществлялись взносы в негосударственную пенсионную систему (как правило, корпоративные пенсионные программы).</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Cтавка страховых взносов (2016), %</h2></hgroup><article  id="c---2016">
+
+<table class = 'rmdtable'>
+<col width="168%" />
+<col width="23%" />
+<col width="140%" />
+<tr class="header">
+<th align="left">Взнос</th>
+<th align="left">Основной тариф</th>
+<th align="left">Льготный тариф для &quot;упрощенки&quot;</th>
+</tr>
+<tr class="odd">
+<td align="left">Взносы в ПФР (на обязательное пенсионное страхование)</td>
+<td align="left">22</td>
+<td align="left">20</td>
+</tr>
+<tr class="even">
+<td align="left">Взносы в ФСС (на обязательное социальное страхование на случай временной нетрудоспособности и в связи с материнством)</td>
+<td align="left">2,9</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Взносы в ФФОМС (на обязательное медицинское страхование)</td>
+<td align="left">5,1</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Взносы в ПФР с выплат, превышающих предельную базу</td>
+<td align="left">10</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Совокупная ставка</td>
+<td align="left">30</td>
+<td align="left">20</td>
+</tr>
+</table>
+
+<p>Предельная база = 796 тыс. рублей (в 2015 году - 711 тыс. рублей)</p>
+
+</article></slide><slide class=''><hgroup><h2>Зависимость между среднемесячной заработной платой и отчислениями в ПФР</h2></hgroup><article  id="--------">
+
+<div align="center">
+<p><img src="fig/wages_social.png" width="880  " height="506" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Распределение взносов в ПФР</h2></hgroup><article  id="---">
+
+<p>Взносы в ПФР распределяются следующим образом:</p>
+
+<ul>
+<li>плательщики 1966 года рождения и старше — вся сумма (<strong>22%</strong>) идет на финансирование страховой части;</li>
+<li><p>плательщики 1967 года рождения и младше: а) вариант I: <strong>22%</strong> перечисляется на финансирование страховой части; <strong>0%</strong> перечисляется на финансирование накопительной части. б) вариант II: <strong>16%</strong> перечисляется на финансирование страховой части; и <strong>6%</strong> перечисляется на финансирование накопительной части.</p></li>
+<li><p>С 2014 года введен мораторий на отчисления в накопительную часть пенсии (&quot;заморозка&quot;). Мораторий сохраняется и в 2016 году. &quot;Цена&quot; вопроса - 300-350 млрд рублей ежегодно.</p></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Как определяется пенсия?</h2></hgroup><article  id="--">
+
+<p><strong>Пенсия = Б (базовая часть) + СЧ (страховая часть) + НЧ (накопительная часть)</strong></p>
+
+<ul>
+<li>С 2015 года введена новая пенсионная формула на основе баллов - <strong>&quot;индвидуальный пенсионной коэффициент&quot;</strong>, которая определяет величину страховой пенсии.</li>
+<li>Условия получения страховой пенсии:</li>
+</ul>
+
+<ol>
+<li>Достижение возраста (60 лет &#8211; для мужчин, 55 лет &#8211; для женщин)</li>
+<li>Наличие стажа не менее 15 лет (с 2024 года)</li>
+<li>Наличие минимального количества баллов (не менее 30). Максимальное количество пенсионных баллов за год с 2021 года – 10, в 2016 году – 7,83.</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Части пенсиии</h2></hgroup><article  id="-">
+
+<p>Б. <strong>Базовая часть</strong> пенсии с 01.04.2016 составляет 4959 рублей 85 копеек в месяц &#8211; это минимальный размер пенсии, который не зависит ни от стажа, ни от размеров социальных взносов. Он гарантирован любому пенсионеру. СЧ зависит от баллов и определяется по формуле.</p>
+
+<p>СЧ. <strong>Страховая часть</strong> СЧ = ИПК * СИПК, где ИПК &#8211; сумма всех пенсионных баллов, СИПК - стоимость пенсионного балла в год назначения пенсии (74,27 рублей в 2016 году).</p>
+
+<p>НЧ. <strong>Накопительная часть</strong> НЧ = ПН/Т. ПН – сумма пенсионных накоплений, учтенная на индивидуальном счете, Т – 234 месяца.</p>
+
+</article></slide><slide class=''><hgroup><h2>Каков размер пенсии?</h2></hgroup><article  id="--">
+
+<ul>
+<li>Средний размер пенсии в России в марте 2016 года составлял 12,4 тыс. рублей в месяц, средняя заработная плата &#8211; 35,6 тыс. рублей.</li>
+<li><strong>Коэффициент замещения</strong> &#8211; отношение пенсии к заработной плате. Это условный показатель замещения дохода человека после выхода на пенсию. Конвенция МОТ по минимальным стандартам социальной защиты устанавливает минимальное значение к-та замещения в 40% для лица с 30-летним трудовым стажем.</li>
+<li>Российская пенсионная система не обеспечивает коэффициент замещения в 40%.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Размер пенсии и средней заработной платы в России</h2></hgroup><article  id="-------">
+
+<div align="center">
+<p><img src="fig/wages_pensions.png" width="880  " height="506" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Накопительная часть пенсии</h2></hgroup><article  id="--">
+
+<ul>
+<li>В рамках действующей пенсионной системы 6% взносов в ПФР для лиц младше 1967 г.р. должны использоваться на формирование накопительной части пенсии &#8211; до предельного объема (для 2016 года &#8211; это теоретически сумма до 47,76 тыс. рублей за год )</li>
+<li>Но с 2014 году введен мораторий на отчисления в накопительную часть, он не отменен.</li>
+<li>Накопительная часть учитывается на индивидуальном счете человека. Информация о текущем состоянии счета доступна на портале Госуслуг.</li>
+<li>Сейчас средства на накопительном счету пенсии увеличиваются только за счет инвестиционного дохода.</li>
+<li>Судьба накопительной части пенсионной системы остается неясной.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Варианты размещения накопительной часть пенсии</h2></hgroup><article  id="----">
+
+<ol>
+<li><strong>ГУК</strong> (Государственная управляющая компании &#8211; ВЭБ) &#8211; средства &quot;молчунов&quot;, которые до 2016 года не перевели свои пенсионные накопления в НПФ или УК. У &quot;молчунов&quot; не формируется накопительной части пенсии.</li>
+<li><strong>НПФ</strong> (негосударственные пенсионные фонды) &#8211; обеспечивают инвестирование средств пенсионных накоплений, а также управление индивидуальными счетами по накопительной части.</li>
+<li><strong>УК</strong> (управляющие компании) обеспечивают инвестирование средств пенсионных накоплений, управление накопительным счетом осуществляет ПФР.</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Активы пенсионных накоплений &#8211; по категориям управляющих</h2></hgroup><article  id="--------">
+
+<div align="center">
+<p><img src="fig/pension_assets.png" width="889  " height="534" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>НПФ или УК</h2></hgroup><article  id="--">
+
+<div align="center">
+<p><img src="fig/npf_or_uk.png" width="934  " height="518" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Во что вкладываются пенсионные накопления? Пример НПФ</h2></hgroup><article  id="------">
+
+<div align="center">
+<p><img src="fig/npf_assets.png" width="867  " height="514" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Основные противоречия в пенсионной системе</h2></hgroup><article  id="----">
+
+<ul>
+<li>Негативные демографические тенденции.</li>
+<li>Растущий дефицит федерального бюджета и трансферт пенсионному фонду из бюджета</li>
+<li>Неэффективная структура пенсионных обязательств &#8211; низкий срок выхода на пенсию и большая доля &quot;досрочников&quot;.</li>
+<li>Неопределенность относительно накопительной части пенсии</li>
+<li>Ограничения на дальнейшее повышение ставок страховых взносов</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Демографический прогноз численности населения</h2></hgroup><article  id="---">
+
+<div align="center">
+<p><img src="fig/population_forecast.png" width="867  " height="514" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Сбалансированность Пенсионного фонда (ПФР)</h2></hgroup><article  id="---">
+
+<div align="center">
+<p><img src="fig/pfr_balance.png" width="867  " height="514" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Средний возраст выхода на пенсию по странам</h2></hgroup><article  id="------">
+
+<div align="center">
+<p><img src="fig/pensions_age.png" width="867  " height="514" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>&quot;Белая&quot; занятость и количество пенсионеров</h2></hgroup><article  id="----">
+
+<div align="center">
+<p><img src="fig/workers_count.png" width="867  " height="514" /></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Реформа пенсионной системы &#8211; Концепция Минфина/ЦБ (2016)</h2></hgroup><article  id="--------2016">
+
+<ol>
+<li>Повышение отчислений с заработной платы за счет полного отказа от регрессивной шкалы и передача сбора страховых взносов в ФНС.</li>
+<li>Постепенное повышение пенсионного возраста до 65 лет для мужчин и женщин — с шагом в 6-12 месяцев в год.</li>
+<li>Отмена выплаты пенсии работающим пенсионерам и отмена выплаты досрочных пенсий.</li>
+<li>Переход на полностью добровольную принцип накопительных взносов в пенсионную систему.<br/></li>
+<li>Отказ от гарантированной индексации пенсий на уровень инфляции.</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Накопительная часть пенсии</h2></hgroup><article  id="---1">
+
+<table class = 'rmdtable'>
+<col width="56%" />
+<col width="193%" />
+<col width="118%" />
+<tr class="header">
+<th align="left">Параметры</th>
+<th align="left">Накопительная компонента в рамках ОПС</th>
+<th align="left">Индивидуальный пенсионный капитал</th>
+</tr>
+<tr class="odd">
+<td align="left">Источник фондирования</td>
+<td align="left">Часть взносов работодателя в ПФР</td>
+<td align="left">Взносы работника, дополненные косвенные софинансированием со стороны государства</td>
+</tr>
+<tr class="even">
+<td align="left">Роль работника</td>
+<td align="left">Риски замораживания на накопительную часть</td>
+<td align="left">Работник сам определяет стратегию накопления</td>
+</tr>
+<tr class="odd">
+<td align="left">Гарантирование</td>
+<td align="left">Есть</td>
+<td align="left">Есть</td>
+</tr>
+<tr class="even">
+<td align="left">Возможность изменения ставки взносов</td>
+<td align="left">Нет</td>
+<td align="left">Есть (0-6%)</td>
+</tr>
+<tr class="odd">
+<td align="left">Досрочное изъятие средств</td>
+<td align="left">Невозможно</td>
+<td align="left">Возможно в определенных условиях</td>
+</tr>
+<tr class="even">
+<td align="left">Фаза выплат</td>
+<td align="left">Опции зависят от величины накоплений: малая сумма выплачивается сразу, выше определенного значения - пожизненные индексируемые платежи</td>
+<td align="left">Работник сам определяет фазу выплат</td>
+</tr>
+</table>
+
+</article></slide><slide class=''><hgroup><h2>Задачи и вопросы для обсуждения &#8211; 1</h2></hgroup><article  id="--------1">
+
+<ol>
+<li><p>Ваша зарплата составляет 80 тыс. рублей в месяц. Вы также получили премию в размере 100 тыс. рублей по итогам года. Какие взносы осуществил Ваш работодатель в пользу ПФР? В пользу других внебюджетных фондов?</p></li>
+<li><p>На вашем счет по накопительной пенсии находится сумма в 300 тыс. рублей. Какая доплата к пенсии по накопительная часть пенсии вам положена, если вы выходите на пенсию в 2016 году?</p></li>
+<li><p>На вашем страховом счете находится 79.66 баллов, на накопительном счете - 300 тыс. рублей. Какая пенсия вам положена, если вы выходите на пенсию в 2016 году?</p></li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Задачи и вопросы для обсуждения &#8211; 2</h2></hgroup><article  id="--------2">
+
+<ol>
+<li><p>Каковы преимущества распределительной, и накопительной системы с точки зрения государства? с точки зрения будушего пенсионера?</p></li>
+<li><p>В чем разница между инвестированием УК и НПФ? В чем преимущества и недостатки каждого из вариантов. Какой варианты бы лично предпочли?</p></li>
+<li><p>Согласитесь ли вы осуществлять добровольные отчисления на накопительную часть пенсии, если она будет ность добровольный характер?</p></li>
+</ol></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script src="libs/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+<script src="libs/ioslides-13.5.1/js/prettify/prettify.js"></script>
+<script src="libs/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+<script src="libs/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+<script src="libs/ioslides-13.5.1/js/hammer.js"></script>
+<script src="libs/ioslides-13.5.1/js/slide-controller.js"></script>
+<script src="libs/ioslides-13.5.1/js/slide-deck.js"></script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
