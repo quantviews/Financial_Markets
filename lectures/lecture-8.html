@@ -10,15 +10,10 @@
 
 
 
-  <meta name="date" content="2016-05-31" />
+  <meta name="date" content="2018-04-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
-
-  <link rel="stylesheet" media="all" href="libs/ioslides-13.5.1/fonts/fonts.css">
-
-  <link rel="stylesheet" media="all" href="libs/ioslides-13.5.1/theme/css/default.css">
-  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="libs/ioslides-13.5.1/theme/css/phone.css">
 
   <base target="_blank">
 
@@ -47,6 +42,17 @@
             ]
     };
   </script>
+
+  <link href="libs/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="libs/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="libs/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="libs/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="libs/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="libs/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="libs/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="libs/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="libs/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="libs/ioslides-13.5.1/js/slide-deck.js"></script>
 
   <style type="text/css">
 
@@ -93,7 +99,6 @@
 
   <link rel="stylesheet" href="styles.css" type="text/css" />
 
-
 </head>
 
 <body style="opacity: 0">
@@ -107,11 +112,11 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2016-05-31</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2018-04-12</p>
           </hgroup>
   </slide>
 
-<slide class=''><hgroup><h2>Цели лекции</h2></hgroup><article  id="-">
+<slide class=""><hgroup><h2>Цели лекции</h2></hgroup><article  id="-">
 
 <ul>
 <li>понять общие принципы устройства и задачи пенсионных систем</li>
@@ -120,7 +125,7 @@
 <li>обсудить варианты относительно будущего устройства пенсионной системы</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Пенсионная система - введение</h2></hgroup><article  id="----">
+</article></slide><slide class=""><hgroup><h2>Пенсионная система - введение</h2></hgroup><article  id="----">
 
 <ul>
 <li>Пенсия &#8211; это <strong>отложенные сбережения</strong> на тот период, когда человек становится нетрудоспособным по тем или иным причинам (возраст, нетрудоспособность или просто нежелание работать).</li>
@@ -130,24 +135,29 @@
 <li>Сейчас практически во всех странах есть государственная пенсионная система. Но характер и масштаб пенсионных систем отличаются по разным странам.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Пенсионная системы - основные типы</h2></hgroup><article  id="-----">
+</article></slide><slide class=""><hgroup><h2>Финансы в жизни человека</h2></hgroup><article  id="---">
+
+<div align="center">
+<p><img src="fig/finance-life.png" width="603" height="404" /></p></div>
+
+</article></slide><slide class=""><hgroup><h2>Изменение доходов с возрастом</h2></hgroup><article  id="---">
+
+<div align="center">
+<p><img src="fig/t_graf09.gif" width="558" height="367" /></p></div>
+
+</article></slide><slide class=""><hgroup><h2>Пенсионная системы - основные типы</h2></hgroup><article  id="-----">
 
 <ol>
 <li>Схема с установленным размером выплат (<strong>defined benefit</strong>). Пенсия выплачивается по достижению определенного возраста работнику, в зависимости от заработной платы и трудового стажа. Выплата осуществляется в виде пожизненного аннуитета - с компенсацией - согласно законодательству. Условный аналог в российской терминологии &#8211; <strong>распределительная</strong> система.</li>
 <li>Схема с установленным размером взносов (<strong>defined contribution</strong>). Размеры выплат зависит от суммы отчислений и накопленного дохода от инвестирования отчислений. Государство не устанавливает правил по индексации или минимальным суммам. Обычно используется как вспомогательная система. Условный аналог в российской терминологии &#8211; <strong>накопительная</strong> система.</li>
 </ol>
 
-</article></slide><slide class=''><hgroup><h2>Изменение доходов с возрастом</h2></hgroup><article  id="---">
-
-<div align="center">
-<p><img src="fig/UK_Income_by_Age_and_Gender.png" width="850" height="500" /></p></div>
-
-</article></slide><slide class=''><hgroup><h2>Типология пенсионных систем (ОЭСР)</h2></hgroup><article  id="---">
+</article></slide><slide class=""><hgroup><h2>Типология пенсионных систем (ОЭСР)</h2></hgroup><article  id="---">
 
 <div align="center">
 <p><img src="fig/pension_systems.bmp" width="1000" height="620" /></p></div>
 
-</article></slide><slide class=''><hgroup><h2>Российская пенсионная система</h2></hgroup><article  id="--">
+</article></slide><slide class=""><hgroup><h2>Российская пенсионная система</h2></hgroup><article  id="--">
 
 <ul>
 <li>До 2002 года в России существовала <strong>распределительная система</strong> пенсионного обеспечения, с 2002 года - <strong>&quot;гибридная&quot;</strong> система, которая сочетает элементы распределительной и накопительной системы. Но приоритет остается за распределительной системой.</li>
@@ -156,12 +166,12 @@
 <li>Есть <strong>негосударственная пенсия</strong> - если осуществлялись взносы в негосударственную пенсионную систему (как правило, корпоративные пенсионные программы).</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Cтавка страховых взносов (2016), %</h2></hgroup><article  id="c---2016">
+</article></slide><slide class=""><hgroup><h2>Cтавка страховых взносов (2018), %</h2></hgroup><article  id="c---2018">
 
 <table class = 'rmdtable'>
-<col width="168%" />
-<col width="23%" />
-<col width="140%" />
+<col width="50%" />
+<col width="7%" />
+<col width="42%" />
 <tr class="header">
 <th align="left">Взнос</th>
 <th align="left">Основной тариф</th>
@@ -194,16 +204,16 @@
 </tr>
 </table>
 
-<p>Предельная база дохода за год = 796 тыс. рублей (в 2015 году - 711 тыс. рублей)</p>
+<p>Предельная база дохода за год = 1021 тыс. рублей для ПФР (в 2017 году - 876 тыс. рублей)</p>
 
-</article></slide><slide class=''><hgroup><h2>Зависимость между среднемесячной заработной платой и отчислениями в ПФР</h2></hgroup><article  id="--------">
+</article></slide><slide class=""><hgroup><h2>Зависимость между среднемесячной заработной платой и отчислениями в ПФР</h2></hgroup><article  id="--------">
 
 <div align="center">
 <p><img src="fig/wages_social.png" width="880  " height="506" /></p></div>
 
-</article></slide><slide class=''><hgroup><h2>Распределение взносов в ПФР</h2></hgroup><article  id="---">
+</article></slide><slide class=""><hgroup><h2>Распределение взносов в ПФР</h2></hgroup><article  id="---">
 
-<p>Взносы в ПФР распределяются следующим образом:</p>
+<p>Взносы в ПФР распределялись следующим образом:</p>
 
 <ul>
 <li>плательщики 1966 года рождения и старше — вся сумма (<strong>22%</strong>) идет на финансирование страховой части;</li>
@@ -211,9 +221,9 @@
 <li><p>С 2014 года введен мораторий на отчисления в накопительную часть пенсии (&quot;заморозка&quot;). Мораторий сохраняется и в 2016 году. &quot;Цена&quot; вопроса - 300-350 млрд рублей ежегодно.</p></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Как определяется пенсия?</h2></hgroup><article  id="--">
+</article></slide><slide class=""><hgroup><h2>Как определяется пенсия сейчас?</h2></hgroup><article  id="---">
 
-<p><strong>Пенсия = Б (базовая часть) + СЧ (страховая часть) + НЧ (накопительная часть)</strong></p>
+<p><strong>Пенсия = ФВ (фиксированная выплата) + ИПК * СИПК </strong></p>
 
 <ul>
 <li>С 2015 года введена новая пенсионная формула на основе баллов - <strong>&quot;индвидуальный пенсионной коэффициент&quot;</strong>, которая определяет величину страховой пенсии.</li>
@@ -223,41 +233,58 @@
 <ol>
 <li>Достижение возраста (60 лет &#8211; для мужчин, 55 лет &#8211; для женщин)</li>
 <li>Наличие стажа не менее 15 лет (с 2024 года)</li>
-<li>Наличие минимального количества баллов (не менее 30). Максимальное количество пенсионных баллов за год с 2021 года – 10, в 2016 году – 7,83.</li>
+<li>Наличие минимального количества баллов (не менее 30). Максимальное количество пенсионных баллов за год с 2021 года – 10, в 2018 году – 8,70.</li>
 </ol>
 
-</article></slide><slide class=''><hgroup><h2>Части пенсиии</h2></hgroup><article  id="-">
+</article></slide><slide class=""><hgroup><h2>Части пенсиии</h2></hgroup><article  id="-">
 
-<p>Б. <strong>Базовая часть</strong> пенсии с 01.04.2016 составляет 4959 рублей 85 копеек в месяц &#8211; это минимальный размер пенсии, который не зависит ни от стажа, ни от размеров социальных взносов. Он гарантирован любому пенсионеру. СЧ зависит от баллов и определяется по формуле.</p>
+<p>Б. <strong>Фиксированная Выплата</strong> (базовая часть) пенсии с 01.01.2018 составляет 4982 рублей 90 копеек в месяц &#8211; это минимальный размер пенсии, который не зависит ни от стажа, ни от размеров социальных взносов. Он гарантирован любому пенсионеру.</p>
 
-<p>СЧ. <strong>Страховая часть</strong> СЧ = ИПК * СИПК, где ИПК &#8211; сумма всех пенсионных баллов, СИПК - стоимость пенсионного балла в год назначения пенсии (74,27 рублей в 2016 году).</p>
+<p>СЧ зависит от баллов и определяется по формуле.</p>
 
-<p>НЧ. <strong>Накопительная часть</strong> НЧ = ПН/Т. ПН – сумма пенсионных накоплений, учтенная на индивидуальном счете, Т – 234 месяца.</p>
+<p>СЧ. <strong>Страховая часть</strong></p>
 
-</article></slide><slide class=''><hgroup><h2>Каков размер пенсии?</h2></hgroup><article  id="--">
+<p>СЧ = ИПК * СИПК, где ИПК &#8211; сумма всех пенсионных баллов, СИПК - стоимость пенсионного балла в год назначения пенсии (81,49 рублей в 2018 году).</p>
+
+<p>СП = ИПК * 81.49 + 4982.90 (в 2018 году)</p>
+
+<p>НЧ. <strong>Накопительная часть</strong></p>
+
+<p>НЧ = ПН/Т. ПН – сумма пенсионных накоплений, учтенная на индивидуальном счете, Т – 246 месяца (20,5 лет).</p>
+
+</article></slide><slide class=""><hgroup><h2>Каков размер пенсии?</h2></hgroup><article  id="--">
 
 <ul>
-<li>Средний размер пенсии в России в марте 2016 года составлял 12,4 тыс. рублей в месяц, средняя заработная плата &#8211; 35,6 тыс. рублей.</li>
+<li>Средний размер пенсии в России в феврале 2018 года составлял 13,3 тыс. рублей в месяц, средняя заработная плата &#8211; 39,8 тыс. рублей.</li>
 <li><strong>Коэффициент замещения</strong> &#8211; отношение пенсии к заработной плате. Это условный показатель замещения дохода человека после выхода на пенсию. Конвенция МОТ по минимальным стандартам социальной защиты устанавливает минимальное значение к-та замещения в 40% для лица с 30-летним трудовым стажем.</li>
 <li>Российская пенсионная система не обеспечивает коэффициент замещения в 40%.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Размер пенсии и средней заработной платы в России</h2></hgroup><article  id="-------">
+</article></slide><slide class=""><hgroup><h2>Размер пенсии и средней заработной платы в России</h2></hgroup><article  id="-------">
 
 <div align="center">
-<p><img src="fig/wages_pensions.png" width="880  " height="506" /></p></div>
+<p><img src="fig/pension_wages.png" width="880  " height="506" /></p></div>
 
-</article></slide><slide class=''><hgroup><h2>Накопительная часть пенсии</h2></hgroup><article  id="--">
+</article></slide><slide class=""><hgroup><h2>Накопительная часть пенсии</h2></hgroup><article  id="--">
 
 <ul>
-<li>В рамках действующей пенсионной системы 6% взносов в ПФР для лиц младше 1967 г.р. должны использоваться на формирование накопительной части пенсии &#8211; до предельного объема (для 2016 года &#8211; это теоретически сумма до 47,76 тыс. рублей за год )</li>
+<li>В рамках действующей пенсионной системы 6% взносов в ПФР для лиц младше 1967 г.р. должны использоваться на формирование накопительной части пенсии &#8211; до предельного объема (для 2018 года &#8211; это теоретически сумма до 61,26 тыс. рублей за год )</li>
 <li>Но с 2014 году введен мораторий на отчисления в накопительную часть, он не отменен.</li>
 <li>Накопительная часть учитывается на индивидуальном счете человека. Информация о текущем состоянии счета доступна на портале Госуслуг.</li>
 <li>Сейчас средства на накопительном счету пенсии увеличиваются только за счет инвестиционного дохода.</li>
 <li>Судьба накопительной части пенсионной системы остается неясной.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Варианты размещения накопительной часть пенсии</h2></hgroup><article  id="----">
+</article></slide><slide class=""><hgroup><h2>Индивидуальный пенсионный капитал</h2></hgroup><article  id="--">
+
+<ul>
+<li>Идея 2016/2017 годов от Министерства финансов и ЦБ. Переход на полностью добровольную принцип накопительных взносов в пенсионную систему.</li>
+<li>Основа &#8211; добровольные взносы участников по ставке от 0% до 6%. Стимул &#8211; предоставление налогового вычета по НДФЛ в полном объеме, но не более 6% заработной платы за год.</li>
+<li>Точные параметры системы пока не определены.</li>
+<li>Новая система может заработать с 2019 года.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Варианты размещения накопительной часть пенсии</h2></hgroup><article  id="----">
 
 <ol>
 <li><strong>ГУК</strong> (Государственная управляющая компании &#8211; ВЭБ) &#8211; средства &quot;молчунов&quot;, которые до 2016 года не перевели свои пенсионные накопления в НПФ или УК. У &quot;молчунов&quot; не формируется накопительной части пенсии.</li>
@@ -265,22 +292,28 @@
 <li><strong>УК</strong> (управляющие компании) обеспечивают инвестирование средств пенсионных накоплений, управление накопительным счетом осуществляет ПФР.</li>
 </ol>
 
-</article></slide><slide class=''><hgroup><h2>Активы пенсионных накоплений &#8211; по категориям управляющих</h2></hgroup><article  id="--------">
+</article></slide><slide class=""><hgroup><h2>Активы пенсионных накоплений &#8211; по категориям управляющих</h2></hgroup><article  id="--------">
 
 <div align="center">
 <p><img src="fig/pension_assets.png" width="889  " height="534" /></p></div>
 
-</article></slide><slide class=''><hgroup><h2>НПФ или УК</h2></hgroup><article  id="--">
+</article></slide><slide class=""><hgroup><h2>НПФ или УК</h2></hgroup><article  id="--">
 
 <div align="center">
 <p><img src="fig/npf_or_uk.png" width="934  " height="518" /></p></div>
 
-</article></slide><slide class=''><hgroup><h2>Во что вкладываются пенсионные накопления? Пример НПФ</h2></hgroup><article  id="------">
+</article></slide><slide class=""><hgroup><h2>Во что вкладываются пенсионные накопления? Пример НПФ</h2></hgroup><article  id="------">
 
 <div align="center">
 <p><img src="fig/npf_assets.png" width="867  " height="514" /></p></div>
 
-</article></slide><slide class=''><hgroup><h2>Основные противоречия в пенсионной системе</h2></hgroup><article  id="----">
+</article></slide><slide class=""><hgroup><h2>Мораторий на переход из НПФ</h2></hgroup><article  id="----">
+
+<ul>
+<li>Если переход из фонда в фонд осуществляется чаще раза в пять лет, гражданин теряет инвестиционный доход с момента предыдущего перехода. В 2017 году граждане потеряли 50 млрд рублей, так как не знали об этом.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Основные противоречия в пенсионной системе</h2></hgroup><article  id="----">
 
 <ul>
 <li>Негативные демографические тенденции</li>
@@ -290,27 +323,27 @@
 <li>Ограничения на дальнейшее повышение ставок страховых взносов</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Демографический прогноз численности населения</h2></hgroup><article  id="---">
+</article></slide><slide class=""><hgroup><h2>Демографический прогноз численности населения</h2></hgroup><article  id="---">
 
 <div align="center">
 <p><img src="fig/population_forecast.png" width="867  " height="514" /></p></div>
 
-</article></slide><slide class=''><hgroup><h2>Сбалансированность Пенсионного фонда (ПФР)</h2></hgroup><article  id="---">
+</article></slide><slide class=""><hgroup><h2>Сбалансированность Пенсионного фонда (ПФР)</h2></hgroup><article  id="---">
 
 <div align="center">
 <p><img src="fig/pfr_balance.png" width="867  " height="514" /></p></div>
 
-</article></slide><slide class=''><hgroup><h2>Средний возраст выхода на пенсию по странам</h2></hgroup><article  id="------">
+</article></slide><slide class=""><hgroup><h2>Средний возраст выхода на пенсию по странам</h2></hgroup><article  id="------">
 
 <div align="center">
 <p><img src="fig/pensions_age.png" width="867  " height="514" /></p></div>
 
-</article></slide><slide class=''><hgroup><h2>&quot;Белая&quot; занятость и количество пенсионеров</h2></hgroup><article  id="----">
+</article></slide><slide class=""><hgroup><h2>&quot;Белая&quot; занятость и количество пенсионеров</h2></hgroup><article  id="----">
 
 <div align="center">
 <p><img src="fig/workers_count.png" width="867  " height="514" /></p></div>
 
-</article></slide><slide class=''><hgroup><h2>Реформа пенсионной системы &#8211; Концепция Минфина/ЦБ (2016)</h2></hgroup><article  id="--------2016">
+</article></slide><slide class=""><hgroup><h2>Реформа пенсионной системы &#8211; Концепция Минфина/ЦБ (2016)</h2></hgroup><article  id="--------2016">
 
 <ol>
 <li>Повышение отчислений с заработной платы за счет полного отказа от регрессивной шкалы и передача сбора страховых взносов в ФНС.</li>
@@ -320,12 +353,12 @@
 <li>Отказ от гарантированной индексации пенсий на уровень инфляции.</li>
 </ol>
 
-</article></slide><slide class=''><hgroup><h2>Накопительная часть пенсии</h2></hgroup><article  id="---1">
+</article></slide><slide class=""><hgroup><h2>Накопительная часть пенсии</h2></hgroup><article  id="---1">
 
 <table class = 'rmdtable'>
-<col width="56%" />
-<col width="193%" />
-<col width="118%" />
+<col width="15%" />
+<col width="52%" />
+<col width="32%" />
 <tr class="header">
 <th align="left">Параметры</th>
 <th align="left">Накопительная компонента в рамках ОПС</th>
@@ -363,20 +396,20 @@
 </tr>
 </table>
 
-</article></slide><slide class=''><hgroup><h2>Задачи и вопросы для обсуждения &#8211; 1</h2></hgroup><article  id="--------1">
+</article></slide><slide class=""><hgroup><h2>Задачи и вопросы для обсуждения &#8211; 1</h2></hgroup><article  id="--------1">
 
 <ol>
-<li><p>Ваша зарплата составляет 80 тыс. рублей в месяц. Вы также получили премию в размере 100 тыс. рублей по итогам года. Какие взносы осуществил Ваш работодатель в пользу ПФР? В пользу других внебюджетных фондов?</p></li>
-<li><p>На вашем счету по накопительной пенсии находится сумма в 300 тыс. рублей. Какая доплата к пенсии по накопительная части вам положена, если вы выходите на пенсию в 2016 году?</p></li>
-<li><p>На вашем страховом счете находится 79.66 баллов, на накопительном счете - 300 тыс. рублей. Какая пенсия вам положена, если вы выходите на пенсию в 2016 году?</p></li>
+<li><p>Ваша зарплата составляет 90 тыс. рублей в месяц. Вы также получили премию в размере 100 тыс. рублей по итогам года. Какие взносы осуществил Ваш работодатель в пользу ПФР? В пользу других внебюджетных фондов?</p></li>
+<li><p>На вашем счету по накопительной пенсии находится сумма в 300 тыс. рублей. Какая доплата к пенсии по накопительная части вам положена, если вы выходите на пенсию в 2018 году?</p></li>
+<li><p>На вашем страховом счете находится 79.66 баллов, на накопительном счете - 300 тыс. рублей. Какая пенсия вам положена, если вы выходите на пенсию в 2018 году?</p></li>
 </ol>
 
-</article></slide><slide class=''><hgroup><h2>Задачи и вопросы для обсуждения &#8211; 2</h2></hgroup><article  id="--------2">
+</article></slide><slide class=""><hgroup><h2>Задачи и вопросы для обсуждения &#8211; 2</h2></hgroup><article  id="--------2">
 
 <ol>
 <li><p>Каковы преимущества распределительной, и накопительной системы с точки зрения государства? с точки зрения будушего пенсионера?</p></li>
-<li><p>В чем разница между инвестированием УК и НПФ? В чем преимущества и недостатки каждого из вариантов. Какой варианты бы лично предпочли?</p></li>
-<li><p>Согласитесь ли вы осуществлять добровольные отчисления на накопительную часть пенсии, если она будет добровольный характер?</p></li>
+<li>В чем разница между инвестированием УК и НПФ? В чем преимущества и недостатки каждого из вариантов. Какой варианты бы лично предпочли?</li>
+<li><p>Согласитесь ли вы осуществлять добровольные отчисления на накопительную часть пенсии, если она будет добровольный характер? От чего может зависить ваше ршение?</p></li>
 </ol></article></slide>
 
 
@@ -384,20 +417,12 @@
 
 </slides>
 
-<script src="libs/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
-<script src="libs/ioslides-13.5.1/js/prettify/prettify.js"></script>
-<script src="libs/ioslides-13.5.1/js/prettify/lang-r.js"></script>
-<script src="libs/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
-<script src="libs/ioslides-13.5.1/js/hammer.js"></script>
-<script src="libs/ioslides-13.5.1/js/slide-controller.js"></script>
-<script src="libs/ioslides-13.5.1/js/slide-deck.js"></script>
-
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
